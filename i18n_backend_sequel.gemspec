@@ -16,11 +16,31 @@ Gem::Specification.new do |s|
     "LICENSE",
      "README.rdoc"
   ]
+  s.files = [
+    ".document",
+     ".gitignore",
+     "LICENSE",
+     "README.rdoc",
+     "Rakefile",
+     "VERSION",
+     "i18n_backend_sequel.gemspec",
+     "lib/i18n_backend_sequel.rb",
+     "lib/i18n_backend_sequel/missing.rb",
+     "lib/i18n_backend_sequel/store_procs.rb",
+     "lib/i18n_backend_sequel/translation.rb",
+     "spec/i18n_backend_sequel_spec.rb",
+     "spec/spec.opts",
+     "spec/spec_helper.rb"
+  ]
   s.homepage = %q{http://github.com/gucki/i18n_backend_sequel}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{I18n backend which uses a Sequel Model}
+  s.test_files = [
+    "spec/spec_helper.rb",
+     "spec/i18n_backend_sequel_spec.rb"
+  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
