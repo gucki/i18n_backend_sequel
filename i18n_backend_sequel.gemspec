@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{i18n_backend_sequel}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Corin Langosch"]
@@ -23,6 +23,10 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "i18n_backend_sequel.gemspec",
+    "lib/i18n/backend/sequel.rb",
+    "lib/i18n/backend/sequel/missing.rb",
+    "lib/i18n/backend/sequel/store_procs.rb",
+    "lib/i18n/backend/sequel/translation.rb",
     "spec/i18n_backend_sequel_spec.rb",
     "spec/spec.opts",
     "spec/spec_helper.rb"
