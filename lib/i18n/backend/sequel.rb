@@ -1,9 +1,12 @@
+require 'i18n'
+require 'i18n/backend/base'
+
 module I18n
   module Backend
     class Sequel
-      autoload :Missing,     'i18n_backend_sequel/missing'
-      autoload :StoreProcs,  'i18n_backend_sequel/store_procs'
-      autoload :Translation, 'i18n_backend_sequel/translation'
+      autoload :Missing,     'i18n/backend/sequel/missing'
+      autoload :StoreProcs,  'i18n/backend/sequel/store_procs'
+      autoload :Translation, 'i18n/backend/sequel/translation'
 
       module Implementation
         include Base, Flatten

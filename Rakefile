@@ -12,6 +12,7 @@ begin
     gem.summary  = 'I18n backend which uses a Sequel Model'
     gem.description = 'I18n backend which allows to store/get the translations from a database using a sequel.'
     gem.add_dependency "sequel", ">= 3.0.0"
+    gem.add_dependency "i18n", ">= 0.5.0"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
