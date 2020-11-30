@@ -67,7 +67,7 @@ module I18n
           end
 
           namespace = "#{keys.last}#{I18n::Backend::Flatten::FLATTEN_SEPARATOR}%"
-          filter{({:key => keys}) | (key.like(namespace))}
+          filter{::Sequel.|({:key => keys}, key.like(namespace))}
         end
 
         plugin :serialization, :json, :value, :interpolations
